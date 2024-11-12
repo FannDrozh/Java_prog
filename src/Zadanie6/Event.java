@@ -2,8 +2,8 @@ package Zadanie6;
 
 
 public class Event {
-    String date;
-    String time;
+    private String date;
+    private String time;
 
     public Event(String date, String time){
         this.date = date;
@@ -13,7 +13,6 @@ public class Event {
     public String getDate() {
         return date;
     }
-
     public String getTime() {
         return time;
     }
@@ -21,7 +20,6 @@ public class Event {
     public void setDate(String date) {
         this.date = date;
     }
-
     public void setTime(String time) {
         this.time = time;
     }

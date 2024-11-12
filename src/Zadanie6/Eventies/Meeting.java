@@ -3,8 +3,8 @@ package Zadanie6.Eventies;
 import Zadanie6.Event;
 
 public class Meeting extends Event {
-    String person;
-    String place;
+    private String person;
+    private String place;
 
     public Meeting (String date, String time, String person, String place){
         super(date, time);
@@ -14,10 +14,8 @@ public class Meeting extends Event {
 
     @Override
     public String toString(){
-        return "Zadanie6.Event.Meeting{" +
-                "person ='" + person + '\'' +
-                "place ='" + place + '\''+
-                '}';
+        return  "person ='" + person + '\'' +
+                "place ='" + place + '\'';
     }
 
     public String getPerson() {

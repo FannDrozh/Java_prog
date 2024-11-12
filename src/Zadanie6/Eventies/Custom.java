@@ -3,7 +3,7 @@ package Zadanie6.Eventies;
 import Zadanie6.Event;
 
 public class Custom extends Event {
-    String description;
+    private String description;
 
     public Custom(String date, String time, String description){
         super(date, time);
@@ -12,9 +12,7 @@ public class Custom extends Event {
 
     @Override
     public String toString(){
-        return "Zadanie6.Event.Meeting{" +
-                "description ='" + description + '\'' +
-                '}';
+        return "description ='" + description + '\'';
     }
 
     public String getDescription() {

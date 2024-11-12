@@ -3,9 +3,9 @@ package Zadanie6.Eventies;
 import Zadanie6.Event;
 
 public class BirthDay extends Event {
-    String hero;
-    String place;
-    int age;
+    private String hero;
+    private String place;
+    private int age;
 //конструктор
     public BirthDay(String date, String time, String hero, String place, int age)
     {
@@ -17,11 +17,11 @@ public class BirthDay extends Event {
 //вывод
     @Override
     public String toString(){
-        return "Zadanie6.Event.BirthDay{" +
+        return  "date ='" + super.getDate() + '\'' +
+                "time ='" + super.getTime() + '\'' +
                 "hero ='" + hero + '\'' +
                 "place ='" + place + '\''+
-                "age ='" + age + '\''+
-                '}';
+                "age ='" + age + '\'';
     }
 //get
     public String getHero() {
