@@ -25,10 +25,14 @@ public class Main {
     }
 
     public static void MenuStructure() {
-        String menu = "Выберите действие:\n 1 - Заполнить список в ручную\n 2 - Заполнить список из файла" +
-                "\n 3 - Записать список в файл\n 4 - Вывести список\n " +
+        String menu = "Выберите действие:\n" +
+                "1 - Заполнить список в ручную\n " +
+                "2 - Заполнить список из файла\n" +
+                "3 - Записать список в файл\n" +
+                "4 - Вывести список\n " +
                 "5 - Осортировать список по дате\n " +
-                "6 - Завершить программу\n";
+                "6 - Осортировать список по времени\n " +
+                "7 - Завершить программу\n";
         Scanner in = new Scanner(System.in);
         ArrayList<Event> eventArrayList = new ArrayList<>();
         Events events = new Events(eventArrayList);
@@ -60,6 +64,11 @@ public class Main {
                     break;
                 }
                 case 6: {
+                    SortEvent.sortByTime(events.getEventArrayList());
+                    events.printArrayEvent();
+                    break;
+                }
+                case 7: {
                     flag = false;
                     break;
                 }
@@ -80,28 +89,28 @@ public class Main {
         }
     }
     public static void ReadDataFile(Events events) {
-
+        events.clearElemets();
         try (BufferedReader reader =
-                     new BufferedReader(new FileReader(new File("data.txt")))) {
+                     new BufferedReader(new FileReader(new File("DateTime.txt")))) {
             String str;
             while ((str = reader.readLine()) != null)
                 events.addElements(ParseString(str));
-            System.out.print("Успешно записано\n");
+            System.out.print("Успешно выведено!\n");
         } catch (IOException e) {
-            System.out.print("Что-то пошло не так");
+            System.out.print("Что-то пошло не так\n");
             e.printStackTrace();
         }
     }
     public static void WriteDataFile(Events events) {
         try (FileWriter writer = new FileWriter("DateTime.txt", false)) {
-            // запись всей строки
             for (Event event : events.getEventArrayList()) {
-                writer.write(event.toString());
+                writer.write(event.getDate() + " " + event.getTime());
                 writer.append('\n');
             }
             writer.flush();
+            System.out.print("Успешно записано\n");
         } catch (IOException ex) {
-            System.out.print("Что-то пошло не так");
+            System.out.print("Что-то пошло не так\n");
             System.out.println(ex.getMessage());
         }
     }

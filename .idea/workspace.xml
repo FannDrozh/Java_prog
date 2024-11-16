@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d33ba9b-1105-4760-a93b-0ba1ce11f88c" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/src/Zadanie6/SortEvent.java" afterDir="false" />
+    <list default="true" id="8d33ba9b-1105-4760-a93b-0ba1ce11f88c" name="Changes" comment="Second commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zadanie6/ContactBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zadanie6/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zadanie6/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zadanie6/Eventies/BirthDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zadanie6/Eventies/BirthDay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zadanie6/Eventies/Custom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zadanie6/Eventies/Custom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zadanie6/Eventies/Meeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zadanie6/Eventies/Meeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DateTime.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zadanie6/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zadanie6/Events.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zadanie6/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zadanie6/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Zadanie6/SortEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zadanie6/SortEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +60,9 @@
     "Application.Zadanie2.executor": "Run",
     "Application.Zadanie3.executor": "Run",
     "Application.Zadanie4.executor": "Run",
+    "Application.Zadanie6.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -187,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729408001349</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Second commit">
+      <option name="closed" value="true" />
+      <created>1731440240945</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731440240945</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +209,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
   </component>
 </project>
